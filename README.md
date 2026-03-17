@@ -1,6 +1,6 @@
 # Trainees in onderwijs matching scripts
 
-This repository contains scripts used for the yearly matching process between trainees and schools.
+This repository contains data pipeline scripts for the yearly matching process between trainees and schools.
 
 ---
 
@@ -44,7 +44,7 @@ For more details, or a step-by-step guide, see the [Playbook](#playbook).
    ```
 
 > The current KeystoneJS CMS does not support static auth tokens. It's easiest to copy the session
-> token from a logged in user with proper persmissions
+> token from a logged-in user with proper permissions
 
 ---
 
@@ -242,8 +242,8 @@ A table where:
 
 After generating the Excel files:
 
-1. Collect new preference submissing after the speed dates have occurred
-2. REPEAT!
+1. Collect new preference submissions after the speed dates have occurred  
+2. Repeat the process for the next round
 
 ---
 
@@ -258,10 +258,10 @@ Follow these steps in the yearly matching cycle:
 5. Give the output to the team. They process the dates schema into a definitive version
 6. After the speed dates have occurred, collect new preference submissions and repeat the process
    for the next round (step 1-5).
-7. After the second round of speed dates have occurred, we'll collection the final preferences and
+7. After the second round of speed dates have occurred, we'll collect the final preferences and
    run the `match` script one last time.
 
-## How does the scheduling algoritm work?
+## How does the scheduling algorithm work?
 The scheduling algorithm assigns trainees to time slots using a **heuristic approach**.
 
 It does not guarantee a perfect solution, but aims to produce a good schedule under real-world constraints.
