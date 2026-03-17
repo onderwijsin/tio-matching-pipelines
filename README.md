@@ -260,3 +260,39 @@ Follow these steps in the yearly matching cycle:
    for the next round (step 1-5).
 7. After the second round of speed dates have occurred, we'll collection the final preferences and
    run the `match` script one last time.
+
+## How does the scheduling algoritm work?
+The scheduling algorithm assigns trainees to time slots using a **heuristic approach**.
+
+It does not guarantee a perfect solution, but aims to produce a good schedule under real-world constraints.
+
+### Key ideas
+
+- **Greedy assignment with scoring**
+  - For each match, the best available slot is selected based on a scoring function
+  - Earlier slots and lower trainee load are preferred
+
+- **Constraint-aware ordering**
+  - Schools with fewer matches are scheduled first (hardest cases first)
+  - Trainees with limited availability are prioritized
+
+- **Availability constraints**
+  - Respects:
+    - manual overrides
+    - school availability
+    - trainee availability
+  - Prevents double bookings
+
+- **Multiple runs**
+  - The algorithm runs several times with the same input
+  - The result with the fewest unassigned matches is selected
+
+### Result
+
+The output aims to:
+
+- minimize unassigned matches  
+- distribute meetings evenly across trainees  
+- respect all availability constraints  
+
+👉 In practice, this produces reliable schedules without requiring complex optimization algorithms.
