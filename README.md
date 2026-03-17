@@ -1,4 +1,4 @@
-# Trainees in onderwijs matching scripts
+# Trainees in onderwijs matching pipeline
 
 This repository contains data pipeline scripts for the yearly matching process between trainees and schools.
 
