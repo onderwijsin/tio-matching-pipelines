@@ -1,0 +1,74 @@
+# Project specific stuff
+~$*.xlsx
+.archive
+.input
+
+# User preferences
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Builds / Caches
+dist/
+coverage/
+.histoire/
+*.tsbuildinfo
+**/.vitepress/cache/
+**/.vitepress/.temp/
+.eslintcache
+
+# Dotenv configs
+.env
+.env.*
+
+# Logs
+debug
+.clinic
+logs
+.logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# IDEs / Editors
+.devcontainer/
+# I want to commit vs code settings
+# .vscode/*
+# !.vscode/extensions.json
+.idea/
+*.code-workspace
+.history/
+*.sublime-settings
+.*.swp
+
+# Environments / Workspaces
+.gitpod.yml
+.netlify
+
+# Temporary files
+TODO
+
+# Docker compose data
+.data
+
+# Other data
+.output
+
+# Docker compose backup files
+**/docker-compose*.backup.*
+
+# Extension registry (applicable once "dev" mode is used to develop on extensions)
+.registry
+
+# Temparary files
+.tmp
+
+# Code review files
+code-review.md
+
+nuxt/.data
+apps/nuxt/.data

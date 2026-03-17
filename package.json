@@ -1,0 +1,39 @@
+{
+	"name": "matching-script",
+	"version": "1.0.5",
+	"description": "A script for automated matching for Trainees in onderwijs",
+	"type": "module",
+	"scripts": {
+		"match": "tsx ./src/match.ts",
+		"dates": "tsx ./src/dates.ts",
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint .",
+		"lint:cache": "eslint . --cache",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier --check .",
+		"format:fix": "prettier --write ."
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@eslint/js": "10.0.1",
+		"@eslint/json": "1.1.0",
+		"@eslint/markdown": "7.5.1",
+		"@types/node": "25.5.0",
+		"consola": "3.4.2",
+		"dotenv": "17.3.1",
+		"eslint": "10.0.3",
+		"eslint-config-prettier": "10.1.8",
+		"globals": "17.4.0",
+		"ofetch": "1.5.1",
+		"pathe": "2.0.3",
+		"prettier": "3.8.1",
+		"read-excel-file": "7.0.2",
+		"tsx": "4.21.0",
+		"typescript-eslint": "8.57.1",
+		"ufo": "1.6.3",
+		"write-excel-file": "3.0.6",
+		"zod": "4.3.6"
+	},
+	"packageManager": "pnpm@10.29.3+sha512.498e1fb4cca5aa06c1dcf2611e6fafc50972ffe7189998c409e90de74566444298ffe43e6cd2acdc775ba1aa7cc5e092a8b7054c811ba8c5770f84693d33d2dc"
+}
