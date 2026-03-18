@@ -30,7 +30,7 @@ export function parseMatchingExcel(rows: Row[]): SchoolMatch[] {
 
 			if (typeof cellValue !== 'string') continue
 
-			if (MATCH_VALUES.has(cellValue)) {
+			if (MATCH_VALUES.has(cellValue.trim().toLowerCase())) {
 				const traineeName = headerRow[colIndex]
 				if (traineeName) {
 					matches.push(traineeName)

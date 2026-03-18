@@ -42,18 +42,14 @@ export const cellStylesExtraHeight = {
 
 /**
  * Cell values in the matching schema that count as a valid match.
+ * Values will be lowercased before checking.
  */
 export const MATCH_VALUES: ReadonlySet<string> = new Set([
 	'match',
-	'forceMatch',
-	'forcedMatch',
 	'forcematch',
 	'forcedmatch',
-	'Forcematch',
-	'Forcedmatch',
-	'ForcedMatch',
-	'ForceMatch',
-	'forcedMatchS',
-	'forcedMatchK',
-	'forcedMatchT',
+	'forcematch',
+	'forcedmatchs',
+	'forcedmatchk',
+	'forcedmatcht',
 ])
